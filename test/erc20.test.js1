@@ -11,7 +11,7 @@ contract('ERC20Minter', function ([creator, other]) {
 
     const NAME = 'ERC20Minter';
     const SYMBOL = 'ERM';
-    const TOTAL_SUPPLY = new BN('1000');
+    const TOTAL_SUPPLY = new BN('1000000000000000000000');
 
     beforeEach(async function () {
         this.token = await SimpleToken.new(NAME, SYMBOL, { from: creator });
